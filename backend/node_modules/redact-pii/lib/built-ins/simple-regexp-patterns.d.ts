@@ -1,0 +1,12 @@
+export declare const creditCardNumber: RegExp;
+export declare const streetAddress: RegExp;
+export declare const zipcode: RegExp;
+export declare const phoneNumber: RegExp;
+export declare const ipAddress: RegExp;
+export declare const usSocialSecurityNumber: RegExp;
+export declare const emailAddress: RegExp;
+export declare const username: RegExp;
+export declare const password: RegExp;
+export declare const credentials: RegExp;
+export declare const digits: RegExp;
+export declare const url: RegExp;
