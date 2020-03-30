@@ -1,5 +1,5 @@
 # projectrepo
- price prediction model app ith integrated chatbot
+# price prediction model app with Integrated Chatbot
 
 --------------------------------------------------------------
 To start the project :
