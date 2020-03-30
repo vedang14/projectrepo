@@ -1,4 +1,4 @@
-# price prediction model app with Integrated Chatbot
+# Price Prediction Model app with Integrated Chatbot
 --------------------------------------------------------------
 To start the project :
 First make sure you have node,mongodb and other packages installed in your desktop
