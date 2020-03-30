@@ -1,4 +1,3 @@
-# projectrepo
 # price prediction model app with Integrated Chatbot
 
 --------------------------------------------------------------
