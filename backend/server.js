@@ -5,9 +5,6 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-
-
-
 const app = express();
 const API_PORT = 4000;
 const dbroute = 'mongodb://127.0.0.1:27017/uiintegration';
@@ -16,7 +13,6 @@ const db = mongoose.connection;
 
 const messagerouter = require('./routes/user');
 const dialogflowrouter = require('./routes/dialog');
-const dashbotrouter = require('./routes/dashbothit');
 
 
 
