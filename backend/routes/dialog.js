@@ -5,7 +5,10 @@ const dashbot = require('dashbot')('s33KZanzDbVaUpcZGo1ipwzydrfqmFSy1lAj9tlz').g
 const https = require('https');
 const url = require('url');
 const intent1 = require('../intents/default_welcome');
-const stock_price = require('../intents/fetchstockprice')
+const stock_price = require('../intents/fetchstockprice');
+const nlpsentiment = require('../intents/nlpsentiment');
+const get = require('../intents/handler');
+
 const {
   dialogflow,
   actionssdk,
@@ -24,7 +27,8 @@ const dialog  = dialogflow({
 
 dialog.intent('Default Welcome Intent',intent1.say_this);
 dialog.intent('stock prices',stock_price.fetch_price);
-
+dialog.intent('nlpsentiment_anlaysis',nlpsentiment.analysis);
+dialog.intent('handler',get.test_this);
 
 router.post("/",dialog);
 module.exports = router;

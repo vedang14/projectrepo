@@ -1,0 +1,64 @@
+const {
+    dialogflow,
+    BasicCard,
+    Image,
+    Button,
+    BrowseCarousel,
+    BrowseCarouselItem,
+    Suggestions,
+    List,
+    LinkOutSuggestion,
+    MediaObject,
+    Carousel,
+  } = require('actions-on-google');
+
+  const dialog  = dialogflow({
+    debug: false
+  });
+
+  const AssistanceMap = {
+    'Stock Price Analyser': {
+      title: 'Stock Price Analyser',
+      text: 'Check out the Intra-day trading prices on the go',
+      image: {
+        url: 'https://storage.googleapis.com/material-design/publish/material_v_12/assets/0BxFyKV4eeNjDN1JRbF9ZMHZsa1k/style-color-uiapplication-palette1.png',
+        accessibilityText: 'Indigo Taco Color',
+      },
+      display: 'WHITE',
+    },
+    'Stock Market Fact Check': {
+      title: 'Stock Market Fact Check',
+      text: 'Check the latest news updates on Stock Market',
+      image: {
+        url: 'https://storage.googleapis.com/material-design/publish/material_v_12/assets/0BxFyKV4eeNjDbFVfTXpoaEE5Vzg/style-color-uiapplication-palette2.png',
+        accessibilityText: 'Pink Unicorn Color',
+      },
+      display: 'WHITE',
+    },
+    'Stock Bot Sentiment Analysis': {
+      title: 'Stock Bot Sentiment Analysis',
+      text: 'Carry out user-spcific Bot Sentiment Analysis',
+      image: {
+        url: 'https://storage.googleapis.com/material-design/publish/material_v_12/assets/0BxFyKV4eeNjDZUdpeURtaTUwLUk/style-color-colorsystem-gray-secondary-161116.png',
+        accessibilityText: 'Blue Grey Coffee Color',
+      },
+      display: 'WHITE',
+    },
+  };  
+  exports.test_this = (conv,{assistopt}) =>{
+    assistopt = conv.arguments.get('OPTION') || assistopt;
+    // Present user with the corresponding basic card and end the conversation.
+    console.log('this option is selecred *********',assistopt);
+    if(assistopt==='Stock Price Analyser')
+    conv.ask(`Check out the lastest Intraday Prices, please enter the firm name you'll like to see or select from the following options`, new BasicCard(AssistanceMap[assistopt]),new Suggestions('Google','Apple','Amazon','Snapchat','Microsoft','No'));
+    if(assistopt==='Stock Market Fact Check')
+    conv.ask(`Check out the lastest Stock Trading News and Updates`, new BasicCard(AssistanceMap[assistopt]));
+    if(assistopt==='Stock Bot Sentiment Analysis'){
+    conv.ask(`Carry out user-spcific Bot Sentiment Analysis`, new BasicCard(AssistanceMap[assistopt]));
+    conv.ask(`Please provide a comprehensive feedback on the Bot's performance`);
+    }
+    if (!conv.screen) {
+      conv.ask(AssitanceMap[assistopt].text);
+    }
+    //conv.ask('Please enter the firm name or select from the following options');
+  }

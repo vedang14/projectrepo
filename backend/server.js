@@ -14,8 +14,6 @@ const db = mongoose.connection;
 const messagerouter = require('./routes/user');
 const dialogflowrouter = require('./routes/dialog');
 
-
-
 db.once('open',() => console.log('database integrated successfully'));
 db.on('error',() => console.error.bind(console, 'cannot integrate with db'));
 
@@ -24,11 +22,11 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(cors());
 
-app.use('/messages',messagerouter);
+//app.use('/messages',messagerouter);
 app.use('/fulfillment',dialogflowrouter);
-app.use('/track',function(req,res){
-  res.send({outcome:'success'});
-})
-//app.use('/',dashbotrouter);
+// app.use('/track',function(req,res){
+//   res.send({outcome:'success'});
+// })
+// app.use('/',dashbotrouter);
 
 app.listen(API_PORT,() =>console.log(`server listening on ${API_PORT}`));
