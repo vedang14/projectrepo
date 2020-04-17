@@ -33,7 +33,7 @@ exports.say_this= (conv)=>{
          title: 'Stock Price Analyser',
          description: 'Check the latest Stock Prices with ease',
          image: new Image({
-           url: 'https://storage.googleapis.com/actionsresources/logo_assistant_2x_64dp.png',
+           url: 'https://cdn4.iconfinder.com/data/icons/business-consultant-flat/64/technical-analysis-stock-chart-trend-analytics-512.png',
            alt: 'Stock Bot Analyser',
          }),
        },
@@ -46,7 +46,7 @@ exports.say_this= (conv)=>{
          title: 'Stock Market Fact Check',
          description: 'Check the latest news updates on Stock Market ',
          image: new Image({
-           url: 'https://storage.googleapis.com/actionsresources/logo_assistant_2x_64dp.png',
+           url: 'https://cdn1.iconfinder.com/data/icons/iconustration-business-color/96/news-economic-newspaper-chart-stat-512.png',
            alt: 'Market Fact Check',
          }),
        },
@@ -59,7 +59,7 @@ exports.say_this= (conv)=>{
          title: 'Stock Bot Sentiment Analysis',
          description: 'Carry out user-spcific Bot Sentiment Analysis',
          image: new Image({
-           url: 'https://storage.googleapis.com/actionsresources/logo_assistant_2x_64dp.png',
+           url: 'https://cdn4.iconfinder.com/data/icons/artificial-intelligence-65/512/sentiment-analysis-quantify-ai-512.png',
            alt: 'Sentiment Analysis',
          }),
        },

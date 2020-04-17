@@ -22,6 +22,7 @@ const {
     conv.ask('Thanks,here is your Result ')
     console.log(ans);
     if(ans<0){
+        conv.ask(`Bot is currenty performing at low score of ${ans} `);
         conv.ask(new BasicCard({
             text: `According to the Analysis on Bot's feedback it's performing at a low score of ${ans} , and required further training improvement and model traning for user specific intents. `,
              // Note the two spaces before '\n' required for
@@ -40,6 +41,7 @@ const {
           }));
     }
     if(ans==0){
+      conv.ask(`Bot is currenty performing at par score of ${ans} `);
         conv.ask(new BasicCard({
             text: `According to the Analysis on Bot's feedback it's performing at a par score of ${ans} , and could be improved with agent training`,
              // Note the two spaces before '\n' required for
@@ -58,6 +60,7 @@ const {
           }));
     }
     if(ans>0){
+      conv.ask(`Bot is currenty performing at good score of ${ans} `);
         conv.ask(new BasicCard({
             text: `According to the Analysis on Bot's feedback it's performing at a high score of ${ans} , for user specific queries`,
              // Note the two spaces before '\n' required for

@@ -21,7 +21,7 @@ const {
       title: 'Stock Price Analyser',
       text: 'Check out the Intra-day trading prices on the go',
       image: {
-        url: 'https://storage.googleapis.com/material-design/publish/material_v_12/assets/0BxFyKV4eeNjDN1JRbF9ZMHZsa1k/style-color-uiapplication-palette1.png',
+        url: 'https://cdn4.iconfinder.com/data/icons/business-consultant-flat/64/technical-analysis-stock-chart-trend-analytics-512.png',
         accessibilityText: 'Indigo Taco Color',
       },
       display: 'WHITE',
@@ -30,7 +30,7 @@ const {
       title: 'Stock Market Fact Check',
       text: 'Check the latest news updates on Stock Market',
       image: {
-        url: 'https://storage.googleapis.com/material-design/publish/material_v_12/assets/0BxFyKV4eeNjDbFVfTXpoaEE5Vzg/style-color-uiapplication-palette2.png',
+        url: 'https://cdn1.iconfinder.com/data/icons/iconustration-business-color/96/news-economic-newspaper-chart-stat-512.png',
         accessibilityText: 'Pink Unicorn Color',
       },
       display: 'WHITE',
@@ -39,7 +39,7 @@ const {
       title: 'Stock Bot Sentiment Analysis',
       text: 'Carry out user-spcific Bot Sentiment Analysis',
       image: {
-        url: 'https://storage.googleapis.com/material-design/publish/material_v_12/assets/0BxFyKV4eeNjDZUdpeURtaTUwLUk/style-color-colorsystem-gray-secondary-161116.png',
+        url: 'https://cdn4.iconfinder.com/data/icons/artificial-intelligence-65/512/sentiment-analysis-quantify-ai-512.png',
         accessibilityText: 'Blue Grey Coffee Color',
       },
       display: 'WHITE',
