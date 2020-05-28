@@ -54,7 +54,7 @@ const {
     if(assistopt==='Stock Market Fact Check')
     conv.ask(`Check out the lastest Stock Trading News and Updates`, new BasicCard(AssistanceMap[assistopt]));
     if(assistopt==='Stock Bot Sentiment Analysis'){
-    conv.ask(`Carry out user-spcific Bot Sentiment Analysis`, new BasicCard(AssistanceMap[assistopt]));
+    conv.ask(`Carry out user specific Bot Sentiment Analysis`, new BasicCard(AssistanceMap[assistopt]));
     conv.ask(`Please provide a comprehensive feedback on the Bot's performance`);
     }
     if (!conv.screen) {

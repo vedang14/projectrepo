@@ -28,7 +28,7 @@ exports.process = async function sentiment_process(user_feed){
     //removing stopping words
     const filteredReview = SW.removeStopwords(tokenizedReview);
 
-    //stemming - word normalization
+    //stemming - word normalization 
     const { SentimentAnalyzer, PorterStemmer } = natural;
     const analyzer = new SentimentAnalyzer('English', PorterStemmer, 'afinn');
     const analysis = analyzer.getSentiment(filteredReview);

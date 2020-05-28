@@ -146,8 +146,7 @@ class User extends React.Component {
                           <label>About Me</label>
                           <Input
                             cols="80"
-                            defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in
-                            that two seat Lambo."
+                            defaultValue="Bot Anlayzer for Mr Mike Andrew ."
                             placeholder="Here can be your description"
                             rows="4"
                             type="textarea"
@@ -177,9 +176,7 @@ class User extends React.Component {
                     <p className="description">michael24</p>
                   </div>
                   <p className="description text-center">
-                    "Lamborghini Mercy <br />
-                    Your chick she so thirsty <br />
-                    I'm in that two seat Lambo"
+                  Bot Anlayzer for Mr Mike Andrew .
                   </p>
                 </CardBody>
                 <hr />

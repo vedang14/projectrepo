@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(cors());
 
-//app.use('/messages',messagerouter);
+app.use('/messages',messagerouter);
 app.use('/fulfillment',dialogflowrouter);
 // app.use('/track',function(req,res){
 //   res.send({outcome:'success'});
