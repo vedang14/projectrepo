@@ -50,7 +50,9 @@ const {
     // Present user with the corresponding basic card and end the conversation.
     console.log('this option is selecred *********',assistopt);
     if(assistopt==='Stock Price Analyser')
-    conv.ask(`Check out the lastest Intraday Prices, please enter the firm name you'll like to see or select from the following options`, new BasicCard(AssistanceMap[assistopt]),new Suggestions('Google','Apple','Amazon','Snapchat','Microsoft','No'));
+    conv.ask(`Check out the lastest Intraday Prices, please enter the firm name you'll like to see or select from the following options`,
+             new BasicCard(AssistanceMap[assistopt]),
+             new Suggestions('Google','Apple','Amazon','Snapchat','Microsoft','No'));
     if(assistopt==='Stock Market Fact Check')
     conv.ask(`Check out the lastest Stock Trading News and Updates`, new BasicCard(AssistanceMap[assistopt]));
     if(assistopt==='Stock Bot Sentiment Analysis'){
